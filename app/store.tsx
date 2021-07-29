@@ -1,9 +1,15 @@
-import { createContext, useReducer } from "react";
-import reducer from "./reducers";
+import { createContext, useReducer, useContext } from "react";
+import reducer from "./reducer";
 
-const initialState: object = {
-  car: [],
-  products: []
+const initialState: object | any = {
+  cart: [],
+  products: [],
+  user: {
+    name: "",
+    email: "",
+    password: "",
+    image: "",
+  },
 };
 
 const StoreContext = createContext(initialState);
@@ -19,5 +25,8 @@ const StoreProvider: ProviderProps = ({ children }): JSX.Element => {
     </StoreContext.Provider>
   );
 };
+
+export const useStore = () => useContext(StoreContext)[0];
+export const useDispatch = () => useContext(StoreContext)[1];
 
 export default StoreProvider;
