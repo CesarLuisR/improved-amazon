@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { useDispatch } from "../app/store";
-import { registerAction } from "../app/actions";
 
 import {
   AppWrapper,
@@ -16,7 +14,6 @@ import {
 const AppContainer = () => {
   const router = useRouter();
   const [formData, setFormData] = useState<object>({});
-  const dispatch = useDispatch();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
@@ -27,8 +24,7 @@ const AppContainer = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    localStorage.setItem("auth", "true");
-    dispatch(registerAction(formData));
+    localStorage.setItem("auth", JSON.stringify(formData));
     router.push("/home");
   };
 
