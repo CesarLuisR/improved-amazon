@@ -11,7 +11,7 @@ import {
   SubmitButton,
 } from "../styles/index.styles";
 
-const AppContainer = () => {
+const AppContainer: React.FC = () => {
   const router = useRouter();
   const [formData, setFormData] = useState<object>({});
 
@@ -39,29 +39,26 @@ const AppContainer = () => {
         <ImageContainer>
           <Image src="/Logo.png" alt="logo" width={1920} height={1080} />
         </ImageContainer>
-        <AuthForm onSubmit={handleSubmit}>
+        <AuthForm data-testid="form" onSubmit={handleSubmit}>
           <Input
             type="text"
             name="name"
             placeholder="Fake username"
             onChange={handleChange}
-            required
           />
           <Input
             type="email"
             name="email"
             placeholder="Fake email"
             onChange={handleChange}
-            required
           />
           <Input
             type="password"
             name="password"
             placeholder="Fake password"
             onChange={handleChange}
-            required
           />
-          <SubmitButton value="Register" />
+          <SubmitButton value="Register" data-testid="submit" />
         </AuthForm>
       </Auth>
     </AppWrapper>

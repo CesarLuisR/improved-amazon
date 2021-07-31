@@ -8,8 +8,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#060608",
-  "background_color": "#060608",
+  "theme_color": "rgb(22, 29, 38)",
+  "background_color": "rgb(22, 29, 38)",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait"

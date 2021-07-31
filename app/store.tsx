@@ -1,14 +1,12 @@
 import { createContext, useReducer, useContext } from "react";
 import reducer from "./reducer";
 
-const initialState: object | any = {
+const initialState: any = {
   cart: [],
   products: [],
-  user: {
-    name: "",
-    email: "",
-    password: "",
-    image: "",
+  search: {
+    toSearch: "",
+    category: "",
   },
 };
 

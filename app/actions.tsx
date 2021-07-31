@@ -1,11 +1,13 @@
 interface ITypes {
   REGISTER: string;
   PRODUCTS: string;
+  SEARCH: string;
 }
 
 const TYPES: ITypes = {
   REGISTER: "REGISTER",
   PRODUCTS: "PRODUCTS",
+  SEARCH: "SEARCH"
 };
 
 export const registerAction = (value: object) => {
@@ -21,5 +23,12 @@ export const productAction = (value: object[]) => {
     payload: value,
   };
 };
+
+export const searchAction = (value: object) => {
+  return {
+    type: TYPES.SEARCH,
+    payload: value
+  }
+}
 
 export default TYPES;

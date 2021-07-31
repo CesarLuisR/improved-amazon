@@ -8,6 +8,9 @@ const reducer = (state: object, action: { type: string; payload: any }) => {
     case TYPES.PRODUCTS:
       return { ...state, products: action.payload };
 
+    case TYPES.SEARCH:
+      return { ...state, search: action.payload };
+
     default:
       return state;
   }

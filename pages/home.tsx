@@ -1,9 +1,9 @@
-import { HomeWrapper } from "./styles";
+import { HomeWrapper } from "../styles/home.styles";
 import axios from "axios";
 import { useEffect } from "react";
-import Header from "../../components/layout/Header";
-import { useDispatch } from "../../app/store";
-import { productAction } from "../../app/actions";
+import Header from "../components/layout/Header";
+import { useDispatch } from "../app/store";
+import { productAction } from "../app/actions";
 
 type HomeProps = (props: {
   categories: string[];
