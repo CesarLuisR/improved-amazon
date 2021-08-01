@@ -23,9 +23,10 @@ const SearchBar: SearchBarProps = ({ categories }) => {
     });
   };
 
-  const handleSearch = (e: React.FormEvent) => {
+  const handleSearch = (e: any) => {
     e.preventDefault();
     dispatch(searchAction(formData));
+    e.target.reset();
   };
 
   return (
