@@ -1,5 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
+
 import SearchBar from "../../common/SearchBar";
+import Profile from "../../common/Profile";
 
 import {
   HeaderWrapper,
@@ -19,7 +22,20 @@ const Header: HeaderProps = ({ categories }) => {
       <SearchBarContainer>
         <SearchBar categories={categories} />
       </SearchBarContainer>
-      <AccountServices></AccountServices>
+      <AccountServices>
+        <Link href="/favorite">
+          <a>
+            <span className="material-icons">favorite_border</span>
+          </a>
+        </Link>
+        <Link href="/cart">
+          <a>
+            <span className="material-icons">shopping_cart</span>
+          </a>
+        </Link>
+        <span className="material-icons">notifications_none</span>
+        <Profile />
+      </AccountServices>
     </HeaderWrapper>
   );
 };

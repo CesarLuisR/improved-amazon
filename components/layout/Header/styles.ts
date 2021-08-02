@@ -5,7 +5,8 @@ export const HeaderWrapper = styled.div`
   height: 80px;
   background-color: rgb(22, 29, 38);
   display: grid;
-  grid-template-columns: 20% 50% 30%;
+  grid-template-columns: 20% 57% 23%;
+  user-select: none;
 `;
 
 export const LogoContainer = styled.div` 
@@ -24,6 +25,9 @@ export const SearchBarContainer = styled.div`
   align-items: center;
 `;
 
-export const AccountServices = styled.div` 
-
+export const AccountServices = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: rgb(255, 254, 229);
 `;
