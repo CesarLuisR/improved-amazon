@@ -25,11 +25,11 @@ const Profile: React.FC = () => {
       <a>
         <ProfileWrapper>
           {profileData?.image ? (
-            <AvatarImage>
+            <AvatarImage data-testid="avatar">
               <Image src={profileData.image} alt="Avatar" width={52} height={52} />
             </AvatarImage>
           ) : (
-            <AvatarLetter>
+            <AvatarLetter data-testid="avatar">
               {profileData?.name.charAt(0).toUpperCase()}
             </AvatarLetter>
           )}

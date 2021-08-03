@@ -28,7 +28,7 @@ describe("Here are the tests of the index component", () => {
     jest.mock("next/router", () => ({ push: jest.fn() }));
 
     fireEvent.click(submitButton);
-    expect(Router.push).toHaveBeenCalledWith('/members');
+    expect(Router.push).toHaveBeenCalledWith('/home');
 
     */
   });

@@ -2,13 +2,18 @@ import styled from "styled-components";
 
 export const Wrapper = styled.form`
   display: grid;
-  width: 35rem;
+  width: 80%;
   height: 3rem;
-  grid-template-columns: 1fr 26% 10%;
+  grid-template-columns: 64% 26% 10%;
   border-radius: 1rem;
   background-color: rgb(34, 48, 64);
   overflow: hidden;
   border: 1px solid #616161;
+
+  @media (max-width: 1020px) {
+    width: 90%;
+    grid-template-columns: 54% 31% 15%;
+  }
 `;
 
 export const CategoriesContainer = styled.div`
