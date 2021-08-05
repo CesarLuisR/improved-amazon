@@ -72,17 +72,7 @@ export const MenuNavBarItem = styled.div`
   color: rgb(255, 254, 229);
   font-family: "Noto Sans JP", sans-serif;
 
-  .material-icons,
-  .profile-container {
+  .material-icons {
     justify-self: center;
-  }
-
-  .profile-container {
-    display: grid;
-    place-items: center;
-  }
-
-  .profile-text {
-    margin-left: 1rem;
   }
 `;

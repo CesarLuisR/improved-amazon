@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Portal from "../../layout/Portal";
-import Profile from "../Profile";
 
 import {
   NavBarModalWrapper,
@@ -55,12 +54,10 @@ const NavBarModal: NavBarModalProps = ({ handleModal, isOpen }) => {
             </Link>
           </MenuNavBarItem>
           <MenuNavBarItem className="profile">
-            <div className="profile-container">
-              <Profile />
-            </div>
+            <span className="material-icons">perm_identity</span>
             <Link href="profile">
               <a>
-                <span className="profile-text">Profile</span>
+                <span>Profile</span>
               </a>
             </Link>
           </MenuNavBarItem>
