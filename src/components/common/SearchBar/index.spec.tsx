@@ -7,9 +7,5 @@ describe("SearchBar tests", () => {
 
     const searchInput = screen.getByPlaceholderText(/search/ig);
     expect(searchInput).toBeInTheDocument();
-
-    fireEvent.change(searchInput);
-
-    // PASS
   });
 });

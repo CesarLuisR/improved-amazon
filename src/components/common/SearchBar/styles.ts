@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.form`
   display: grid;
   width: 80%;
+  max-width: 35rem;
   height: 3rem;
   grid-template-columns: 64% 26% 10%;
   border-radius: 1rem;
@@ -12,6 +13,7 @@ export const Wrapper = styled.form`
 
   @media (max-width: 1020px) {
     width: 90%;
+    max-width: 90%;
     grid-template-columns: 54% 31% 15%;
   }
 `;

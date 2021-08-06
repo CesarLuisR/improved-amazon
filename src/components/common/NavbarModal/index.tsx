@@ -9,6 +9,7 @@ import {
   MenuNavBar,
   MenuNavBarItem,
 } from "../../layout/Menu/styles";
+
 import { LogoContainer } from "../../layout/Header/styles";
 
 type NavBarModalProps = (props: {

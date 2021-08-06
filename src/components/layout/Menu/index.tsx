@@ -12,16 +12,12 @@ const Menu: MenuProps = ({ categories }) => {
   const [isNavBarOpen, setIsNavBarOpen] = useState(false);
 
   const handleModal = (component: string, to: string) => {
-    switch (to) {
-      case "open":
-        if (component === "search") setIsSearchModalOpen(true);
-        else setIsNavBarOpen(true);
-        break;
-
-      case "close":
-        if (component === "search") setIsSearchModalOpen(false);
-        else setIsNavBarOpen(false);
-        break;
+    if (to === "open") {
+      if (component === "search") setIsSearchModalOpen(true);
+      else setIsNavBarOpen(true);
+    } else {
+      if (component === "search") setIsSearchModalOpen(false);
+      else setIsNavBarOpen(false);
     }
   };
 
@@ -30,15 +26,15 @@ const Menu: MenuProps = ({ categories }) => {
       <MenuIcon onClick={() => handleModal("search", "open")}>
         <span className="material-icons">search</span>
       </MenuIcon>
-      {isSearchModalOpen && (
-        <SearchModal categories={categories} handleModal={handleModal} />
-      )}
       <MenuIcon
         className="navbar"
         onClick={() => handleModal("navbar", "open")}
       >
         <span className="material-icons icon">menu</span>
       </MenuIcon>
+      {isSearchModalOpen && (
+        <SearchModal categories={categories} handleModal={handleModal} />
+      )}
       <NavBarModal handleModal={handleModal} isOpen={isNavBarOpen} />
     </MenuWrapper>
   );

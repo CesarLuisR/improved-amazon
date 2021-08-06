@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { searchAction } from "../../../app/actions";
 import { useDispatch } from "../../../app/store";
 
