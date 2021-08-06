@@ -43,12 +43,6 @@ export const ListName = styled.button`
     }
   }
 
-  /* .items {
-    width: 100%;
-    height: 50rem;
-    border: 1px solid red;
-  } */
-
   &:focus {
     grid-template-columns: 3px 1fr;
 
@@ -71,6 +65,7 @@ export const LogOut = styled.div`
   padding: 2rem;
   color: rgb(255, 254, 229);
   font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
 
   a {
     display: flex;

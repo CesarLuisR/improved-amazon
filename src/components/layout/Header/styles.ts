@@ -34,6 +34,19 @@ export const SearchBarContainer = styled.div`
 export const NavBar = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   color: rgb(255, 254, 229);
+
+  .navbar-icon {
+    border-radius: 8px;
+    padding: 12px;
+    display: grid;
+    place-items: center;
+    margin: 10px;
+
+    &:hover {
+      background-color: rgb(255, 153, 1);
+      color: rgb(22, 29, 38);
+    }
+  }
 `;

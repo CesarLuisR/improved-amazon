@@ -45,17 +45,17 @@ const Header: HeaderProps = ({ categories }) => {
           </SearchBarContainer>
           <NavBar>
             <Link href="/favorites">
-              <a>
+              <a className="navbar-icon">
                 <span className="material-icons">favorite_border</span>
               </a>
             </Link>
             <Link href="/cart">
-              <a>
+              <a className="navbar-icon">
                 <span className="material-icons">shopping_cart</span>
               </a>
             </Link>
             <Link href="/notifications">
-              <a>
+              <a className="navbar-icon">
                 <span className="material-icons">notifications_none</span>
               </a>
             </Link>
