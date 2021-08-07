@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Portal from "../../layout/Portal";
+import Portal from "../layout/Portal";
 
 import {
   NavBarModalWrapper,
   MenuIcon,
   MenuNavBar,
   MenuNavBarItem,
-} from "../../layout/Menu/styles";
+} from "../layout/Menu/styles";
 
-import { LogoContainer } from "../../layout/Header/styles";
+import { LogoContainer } from "../layout/Header/styles";
 
 type NavBarModalProps = (props: {
   handleModal: (component: string, to: string) => void;

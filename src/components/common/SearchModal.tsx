@@ -1,7 +1,7 @@
-import Portal from "../../layout/Portal";
-import SearchBar from "../../common/SearchBar";
+import Portal from "../layout/Portal";
+import SearchBar from "./SearchBar";
 
-import { SearchBarModalWrapper, MenuIcon } from "../../layout/Menu/styles";
+import { SearchBarModalWrapper, MenuIcon } from "../layout/Menu/styles";
 
 type SearchModalProps = (props: {
   categories: string[];

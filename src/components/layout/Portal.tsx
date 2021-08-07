@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
+import React, { useState, useEffect } from "react";
 
 type PortalProps = (props: {
   children: React.ReactElement;
@@ -11,12 +11,14 @@ const Portal: PortalProps = ({ children }) => {
   useEffect(() => {
     setMounted(true);
     return () => setMounted(false);
-  }, [setMounted]);
+  }, []);
 
   const container = document.getElementById("portal");
 
   return container
-    ? (mounted ? createPortal(children, container) : null)
+    ? mounted
+      ? createPortal(children, container)
+      : null
     : null;
 };
 
