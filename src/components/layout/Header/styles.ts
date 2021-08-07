@@ -10,7 +10,7 @@ export const HeaderWrapper = styled.div`
   grid-template-columns: 20% 57% 23%;
   user-select: none;
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1030px) {
     grid-template-columns: 1fr 160px;
   }
 `;

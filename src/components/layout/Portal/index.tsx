@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 
-const Portal = ({ children }) => {
+type PortalProps = (props: {
+  children: React.ReactElement;
+}) => React.ReactPortal | null;
+
+const Portal: PortalProps = ({ children }) => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -10,7 +14,10 @@ const Portal = ({ children }) => {
   }, [setMounted]);
 
   const container = document.getElementById("portal");
-  return mounted ? createPortal(children, container) : null;
+
+  return container
+    ? (mounted ? createPortal(children, container) : null)
+    : null;
 };
 
 export default Portal;

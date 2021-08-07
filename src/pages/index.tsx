@@ -58,7 +58,7 @@ const AppContainer: React.FC = () => {
             placeholder="Fake password"
             onChange={handleChange}
           />
-          <SubmitButton value="Register" data-testid="submit" />
+          <SubmitButton value="Log In" data-testid="submit" />
         </AuthForm>
       </Auth>
     </AppWrapper>

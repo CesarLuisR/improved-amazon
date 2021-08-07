@@ -20,12 +20,12 @@ const Header: HeaderProps = ({ categories }) => {
   const [mediaQuery, setMediaQuery] = useState<MediaQueryList>();
 
   useEffect(() => {
-    setMediaQuery(window.matchMedia("(max-width: 1020px)"));
+    setMediaQuery(window.matchMedia("(max-width: 1030px)"));
   }, []);
 
   useLayoutEffect(() => {
     const updateSize = () =>
-      setMediaQuery(window.matchMedia("(max-width: 1020px)"));
+      setMediaQuery(window.matchMedia("(max-width: 1030px)"));
 
     window.addEventListener("resize", updateSize);
   }, []);
