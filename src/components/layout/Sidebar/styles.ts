@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SidebarWrapper = styled.div`
   position: sticky;
   top: 80px;
+  height: calc(100vh - 80px);
   display: grid;
   grid-template-rows: 1fr 100px;
   background-color: rgb(22, 29, 38);
