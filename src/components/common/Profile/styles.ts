@@ -22,7 +22,7 @@ const Avatar = styled.div`
   background-color: rgb(34, 48, 64);
 `;
 
-export const AvatarImage = styled(Avatar)` 
+export const AvatarImage = styled(Avatar)`
   overflow: hidden;
 `;
 

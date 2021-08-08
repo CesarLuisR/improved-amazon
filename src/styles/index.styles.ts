@@ -32,7 +32,7 @@ export const AuthForm = styled.form`
   height: 15rem;
 `;
 
-export const Input = styled.input.attrs(props => ({
+export const Input = styled.input.attrs((props) => ({
   required: true,
 }))`
   background-color: rgb(34, 48, 64);

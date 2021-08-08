@@ -54,9 +54,9 @@ const Header: HeaderProps = ({ categories }) => {
                 <span className="material-icons">shopping_cart</span>
               </a>
             </Link>
-            <Link href="/notifications">
+            <Link href="/myshop">
               <a className="navbar-icon">
-                <span className="material-icons">notifications_none</span>
+                <span className="material-icons">storefront</span>
               </a>
             </Link>
             <Profile />

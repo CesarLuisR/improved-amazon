@@ -47,10 +47,10 @@ const NavBarModal: NavBarModalProps = ({ handleModal, isOpen }) => {
             </Link>
           </MenuNavBarItem>
           <MenuNavBarItem>
-            <span className="material-icons">notifications_none</span>
-            <Link href="/notifications">
+            <span className="material-icons">storefront</span>
+            <Link href="/myshop">
               <a>
-                <span>Nofications</span>
+                <span>My shop</span>
               </a>
             </Link>
           </MenuNavBarItem>

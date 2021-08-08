@@ -3,7 +3,7 @@ import Image from "next/image";
 import { ProfileWrapper, AvatarImage, AvatarLetter } from "./styles";
 import { useState, useEffect } from "react";
 
-const Profile: React.FC = () => {
+const Profile: React.FC = (): JSX.Element => {
   type profileDataT = {
     name: string;
     email: string;
@@ -26,7 +26,12 @@ const Profile: React.FC = () => {
         <ProfileWrapper>
           {profileData?.image ? (
             <AvatarImage data-testid="avatar">
-              <Image src={profileData.image} alt="Avatar" width={52} height={52} />
+              <Image
+                src={profileData.image}
+                alt="Avatar"
+                width={52}
+                height={52}
+              />
             </AvatarImage>
           ) : (
             <AvatarLetter data-testid="avatar">

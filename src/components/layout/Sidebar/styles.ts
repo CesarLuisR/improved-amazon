@@ -13,19 +13,20 @@ export const SidebarWrapper = styled.div`
 export const ListContainer = styled.div`
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-auto-rows: 2.5rem;
   padding-top: 2rem;
 `;
 
-export const ListName = styled.button`
+export const ListItem = styled.div``;
+
+export const ListItemName = styled.button`
   display: grid;
   grid-template-columns: 0.1px 1fr;
   width: 100%;
+  height: 2.5rem;
   background-color: rgb(22, 29, 38);
   border: none;
   font-family: "Noto Sans JP", sans-serif;
-  height: 100%;
+  font-weight: bold;
   align-items: center;
 
   .content {
@@ -58,6 +59,31 @@ export const ListName = styled.button`
       color: rgb(255, 153, 1);
       background-color: rgb(44, 60, 75);
       border-radius: 10px;
+    }
+  }
+
+  &:focus ~ div,
+  & ~ div:hover {
+    display: block;
+  }
+`;
+
+export const ListItemChildren = styled.div`
+  height: min-content;
+  margin-top: 1rem;
+  margin-left: 5.1rem;
+  margin-bottom: 2.5rem;
+  display: none;
+
+  a {
+    display: block;
+    margin-bottom: 1.1rem;
+    color: rgb(224, 224, 224);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+
+    &.capitalize {
+      text-transform: capitalize;
     }
   }
 `;
