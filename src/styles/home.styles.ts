@@ -9,4 +9,8 @@ export const MainWrapper = styled.div`
   grid-template-columns: 18rem 1fr;
   width: 100%;
   height: 100%;
+
+  @media (max-width: 1030px) {
+    grid-template-columns: 1fr;
+  }
 `;

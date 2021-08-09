@@ -8,6 +8,39 @@ export const SidebarWrapper = styled.div`
   grid-template-rows: 1fr 100px;
   background-color: rgb(22, 29, 38);
   border-top: 1px solid #616161;
+
+  @media (max-width: 1030px) {
+    position: fixed;
+    visibility: hidden;
+    color: rgb(22, 29, 38);
+    width: 18rem;
+
+    &.open {
+      visibility: visible;
+    }
+  }
+`;
+
+export const HandleModalButton = styled.button`
+  position: fixed;
+  bottom: .5rem;
+  right: .5rem;
+  z-index: 10;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 100%;
+  background-color: rgb(22, 29, 38);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  border: none;
+  outline: none;
+  color: rgb(255, 254, 229);
+
+  &:hover {
+    background-color: rgb(255, 153, 1);
+    color: rgb(22, 29, 38);
+  }
 `;
 
 export const ListContainer = styled.div`

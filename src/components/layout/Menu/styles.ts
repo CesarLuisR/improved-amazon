@@ -43,6 +43,7 @@ export const NavBarModalWrapper = styled.div`
   bottom: 0;
   transition: 0.8s;
   transform: translateX(100%);
+  z-index: 20;
 
   &.open {
     transform: translateX(0);
